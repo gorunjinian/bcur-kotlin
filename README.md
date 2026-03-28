@@ -30,7 +30,7 @@ dependencies {
 }
 ```
 
-### Maven Central (coming soon)
+### Maven Central
 
 ```kotlin
 implementation("com.gorunjinian:bcur-kotlin:1.0.0")

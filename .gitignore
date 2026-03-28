@@ -2,11 +2,37 @@
 .gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
 
 # IDE
 .idea/
 *.iml
+.vscode/
+*.swp
+*.swo
+
+# OS
 .DS_Store
+Thumbs.db
+Desktop.ini
 
 # Local properties
 local.properties
+
+# Kotlin
+.kotlin/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Signing / Secrets
+*.gpg
+*.jks
+*.keystore
+secring.*

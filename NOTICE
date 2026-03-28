@@ -1,0 +1,48 @@
+bcur-kotlin
+Copyright (c) 2025 gorunjinian
+
+This project is a derivative work based on the following open-source projects:
+
+---
+
+hummingbird (Java BC-UR implementation)
+Copyright (c) 2020-2024 Sparrow Wallet
+Licensed under the Apache License, Version 2.0
+https://github.com/sparrowwallet/hummingbird
+
+The FountainDecoder, URDecoder, and related fountain code decoding logic
+were ported from Java to Kotlin from this project. Modifications include
+conversion to pure Kotlin with no external dependencies, removal of the
+cbor-java dependency in favor of manual CBOR encoding/decoding, and
+adaptation for Kotlin Multiplatform compatibility.
+
+---
+
+kotlin-hardware-wallet (Kotlin BC-UR implementation)
+Copyright (c) 2024 iml1s
+Licensed under the MIT License
+https://github.com/iml1s/kotlin-hardware-wallet
+
+The UREncoder, FountainEncoder, Bytewords, CRC32, SHA256, and
+Xoshiro256StarStar implementations were derived from this project.
+Modifications include package renaming, addition of CBOR decoding
+(fromCborBytes), corrections to RandomSampler for cross-implementation
+compatibility, and addition of the Xoshiro256StarStar string constructor
+and nextData method.
+
+---
+
+URKit (Swift BC-UR reference implementation)
+Copyright (c) 2020 Blockchain Commons, LLC
+Licensed under the BSD 2-Clause License
+https://github.com/BlockchainCommons/URKit
+
+The original algorithms and specifications that both hummingbird and
+kotlin-hardware-wallet were ported from.
+
+---
+
+xoshiro256** PRNG
+By David Blackman and Sebastiano Vigna
+Released to the public domain
+http://xoshiro.di.unimi.it/

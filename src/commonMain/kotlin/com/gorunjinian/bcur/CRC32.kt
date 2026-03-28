@@ -11,7 +11,7 @@ object CRC32 {
         val polynomial = 0xEDB88320.toInt()
         for (i in 0 until 256) {
             var crc = i
-            for (j in 0 until 8) {
+            repeat(8) {
                 crc = if (crc and 1 != 0) {
                     (crc ushr 1) xor polynomial
                 } else {

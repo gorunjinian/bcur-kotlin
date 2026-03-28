@@ -99,9 +99,9 @@ class URDecoder {
             } else {
                 throw UR.InvalidURException("Invalid sequence component: $seq")
             }
-        } catch (e: UR.InvalidURException) {
+        } catch (_: UR.InvalidURException) {
             return false
-        } catch (e: IllegalArgumentException) {
+        } catch (_: IllegalArgumentException) {
             return false
         }
     }

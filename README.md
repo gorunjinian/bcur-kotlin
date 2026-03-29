@@ -127,6 +127,10 @@ UR (data) --> Fountain Encoder --> Part 1, Part 2, ... Part N
 | `SHA256` | Pure Kotlin SHA-256 hash |
 | `Xoshiro256StarStar` | Deterministic PRNG for fountain codes |
 
+## Roadmap
+
+- **CBOR schema parser for structured UR types** — The current `Cbor` module handles minimal CBOR encoding (byte strings, unsigned integers, arrays) sufficient for the UR transport layer. Full CBOR schema support for [BCR-2020-010 (crypto-output)](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-010-output-desc.md) and [BCR-2020-015 (crypto-account)](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-015-account.md) — including tagged CBOR descriptors (tag 308 for output descriptors, tag 303 for HD keys, tag 304 for key paths, etc.) — is planned and will be ported soon.
+
 ## Specifications
 
 - [BCR-2020-005: Uniform Resources (UR)](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md)

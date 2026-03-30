@@ -33,7 +33,7 @@ dependencies {
 ### Maven Central
 
 ```kotlin
-implementation("com.gorunjinian:bcur-kotlin:1.0.1")
+implementation("com.gorunjinian:bcur-kotlin:1.0.5")
 ```
 
 ## Usage
